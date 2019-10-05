@@ -1,2 +1,1 @@
-# LabsQt
 # BinaryTree
