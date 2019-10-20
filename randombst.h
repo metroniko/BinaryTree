@@ -12,6 +12,8 @@ public:
     bool find(int value);
     void walk();
     void clear();
+    int min() const;
+    int max() const;
 
 private:
     Node* root{nullptr};

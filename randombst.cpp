@@ -51,6 +51,7 @@ Node *RandomBST::_join(Node* left, Node* right)
         }
 }
 
+
 bool RandomBST::find(int value)
 {
     return (findNode(this->root, value)? true: false);
@@ -66,6 +67,28 @@ void RandomBST::clear()
     this->_clear(this->root);
     this->root = nullptr;
 }
+
+int RandomBST::min() const
+{
+
+    Node* tempNode = this->root;
+    while(tempNode->left) {
+        tempNode = tempNode->left;
+    }
+    return tempNode->key;
+
+}
+
+int RandomBST::max() const
+{
+    Node* tempNode = this->root;
+
+    while(tempNode->right) {
+        tempNode = tempNode->right;
+    }
+    return tempNode->key;
+}
+
 void RandomBST::_clear(Node *root)
 {
     if(root != nullptr) {
