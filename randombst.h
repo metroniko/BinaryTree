@@ -25,6 +25,7 @@ private:
     void _walk(Node* root);
     void _clear(Node* root);
     Node* _remove(Node* root, int value);
+
     Node* _join(Node* left, Node* right);
 
 };
